@@ -45,7 +45,7 @@ def busqueda_ceros(fun, x0, x1, err, mit):
     print(f"Cero encontrado: {hx_secante[-1]}")
     print(f"Cantidad de iteraciones: {len(hx_secante)}\n")
     if abs(hy_newton[-1]) < abs(hy_secante[-1]):
-        print("El método de newton da el cero más cercano")
+        print("El método de Newton da el cero más cercano")
     if abs(hy_newton[-1]) > abs(hy_secante[-1]):
         print("El método de la secante da el cero más cercano")
     if abs(hy_newton[-1]) == abs(hy_secante[-1]):
