@@ -12,13 +12,13 @@
 # -hx, historial de puntos generados
 
 def ripf(fun, x0, err, mit):
-    hx = []
+    hx = [x0]
     for _ in range(mit):
         xk = fun(x0)
         hx.append(xk)
-        if abs(xk -x0) < err:
+        if abs(xk - x0) < err:
             print("Se encontró el punto fijo.")
-            break
+            return hx
         
         x0 = xk
     return hx

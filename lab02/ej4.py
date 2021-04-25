@@ -7,7 +7,7 @@ def aprox_cubicroot_a(a):
         derivative = 3*(x**2)
         return function, derivative
     
-    hx, _ = rnewton(fun, a-1, 10e-6, 100)
+    hx, _ = rnewton(fun, a-1, 1e-6, 100)
     return hx[-1]
 
 print(f"La aproximación de a**1/3 es: {aprox_cubicroot_a(8)}")

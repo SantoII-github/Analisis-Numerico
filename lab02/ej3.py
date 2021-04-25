@@ -37,9 +37,3 @@ def rnewton(fun, x0, err, mit):
             
         x0 = xk
     return hx, hf    
-    
-def test(x):
-    function = x**2
-    derivative = 2*x
-    return function, derivative
-
