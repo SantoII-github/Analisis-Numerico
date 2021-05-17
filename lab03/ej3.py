@@ -18,4 +18,5 @@ if __name__ == "__main__":
     plt.plot(zj, w, label="Polinomio Interpolante de Newton")
     plt.plot(i, f_i, "bo", label="Puntos de Interpolación")
     plt.legend()
+    plt.grid()
     plt.show()
