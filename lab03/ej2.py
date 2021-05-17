@@ -1,4 +1,7 @@
 def inewton(x, y, z):
+    if len(x) != len(y):
+        print("X e Y no tienen la misma longitud.")
+        return None
     # Cantidad de puntos a interpolar:
     n = len(x)
 
